@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp">
+        android:layout_marginTop="33dp"
+        android:contentDescription="@string/description_bill_amount"/>
 
         <EditText
             android:id="@+id/input_billAmount"
@@ -25,26 +26,28 @@
             android:hint="@string/tip_hint"
             android:inputType="phone"/>
 
-    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:text="@string/tip_20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:id="@+id/button_tip_20"
         android:layout_above="@+id/textView"
         android:layout_alignRight="@+id/input_layout_billAmount"
-        android:layout_alignEnd="@+id/input_layout_billAmount" />
+        android:layout_alignEnd="@+id/input_layout_billAmount"
+        android:contentDescription="@string/description_20_percent"/>
 
     <Button
         android:text="@string/tip_15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="33dp"
         android:id="@+id/button_tip_15"
         android:layout_below="@+id/input_layout_billAmount"
         android:layout_alignLeft="@+id/input_layout_billAmount"
-        android:layout_alignStart="@+id/input_layout_billAmount" />
+        android:layout_alignStart="@+id/input_layout_billAmount"
+        android:contentDescription="@string/description_15_percent"/>
 
     <TextView
         android:text="@string/total_amount"
@@ -54,7 +57,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
         android:id="@+id/textView"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:contentDescription="@string/description_total_amount"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,5 +66,6 @@
         android:layout_marginTop="10dp"
         android:id="@+id/totalAmount"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/description_total_amount"/>
 </RelativeLayout>

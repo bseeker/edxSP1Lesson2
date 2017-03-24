@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (tipDoubleValue != null) {
             tipDoubleValue += tipDoubleValue * tipValue;
             totalAmount.setText(tipDoubleValue.toString());
+            totalAmount.setContentDescription(tipDoubleValue.toString());
         }
     }
 
